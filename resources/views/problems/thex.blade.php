@@ -10,7 +10,7 @@
         <div class="mt-4 mb-4 border border-gray-700 rounded-lg">
             <span class="flex flex-col items-cetner text-center p-10">Ingrese una dimensión para construir la X</span>
             <div class="px-6">
-                <form action="{{ route('problems.thex.generated') }}" method="get" id="form-generate" name="form-generate">
+                <form action="{{ route('problems.thex.generate') }}" method="get" id="form-generate" name="form-generate">
                     <label for="dim">Dimensión: </label>
                     <input class="form-control rounded-md focus:border-pink-600 focus:ring-1 focus:outline-none focus:ring-pink-600" type="text" name="dimention" id="dimention">
                     <button class="rounded-md ml-4 px-2 py-1 bg-pink-600 text-white hover:bg-pink-500" type="submit" form="form-generate">Generar</button>

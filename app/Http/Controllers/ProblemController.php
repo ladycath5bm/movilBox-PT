@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Actions\GenerateXAction;
+use App\Actions\HistogramAction;
 use Illuminate\Contracts\View\View;
 use App\Http\Requests\GenerateXRequest;
+use App\Http\Requests\HistogramRequest;
 
 class ProblemController extends Controller
 {
@@ -17,6 +19,20 @@ class ProblemController extends Controller
     {
         $dimention = $request->validated();
         $arrayX = (new GenerateXAction())->generate($dimention['dimention']);
+
         return view('problems.thex', compact('arrayX'));
+    }
+
+    public function histogram(): View
+    {
+        return view('problems.histogram');
+    }
+
+    public function histogramGenerate(HistogramAction $histogramAction, HistogramRequest $request): View
+    {
+        $myArray = $request->validated();
+        $histogram = $histogramAction->generate($myArray);
+
+        return view('problems.histogram', compact('histogram'));
     }
 }
