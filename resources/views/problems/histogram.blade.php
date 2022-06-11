@@ -12,7 +12,7 @@
             <div class="px-6">
                 <form action="{{ route('problems.histogram.generate') }}" method="get" id="form-generate" name="form-generate">
                     @csrf
-                    <label for="myArray">Arreglo: </label>
+                    <label>Arreglo: </label>
                     <select class="rounded-md text-sm text-pink-600" name="p_one" id="p_one">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -120,8 +120,8 @@
                 </form>
             </div>
             <div class="flex flex-col text-center items-center mt-4 mb-4">
-                @if(isset($arrayX))
-                    @foreach ($arrayX as $line)
+                @if(isset($histogram))
+                    @foreach ($histogram as $line)
                         <ul><span class="p-10 text-center text-pink-800 font-bold">{{ $line }}</span></ul>
                     @endforeach
                 @endif

@@ -14,7 +14,6 @@ class HistogramRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'p_cero' => 'required|numeric|integer|min:1|max:5',
             'p_one' => 'required|numeric|integer|min:1|max:5',
             'p_two' => 'required|numeric|integer|min:1|max:5',
             'p_three' => 'required|numeric|integer|min:1|max:5',
