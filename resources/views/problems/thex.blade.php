@@ -8,7 +8,7 @@
             <span>1. La X</span>
         </div>
         <div class="mt-4 mb-4 border border-gray-700 rounded-lg">
-            <span class="flex flex-col items-cetner text-center p-10">Ingrese una dimesión para construir la X</span>
+            <span class="flex flex-col items-cetner text-center p-10">Ingrese una dimensión para construir la X</span>
             <div class="px-6">
                 <form action="{{ route('problems.thex.generated') }}" method="get" id="form-generate" name="form-generate">
                     <label for="dim">Dimensión: </label>
