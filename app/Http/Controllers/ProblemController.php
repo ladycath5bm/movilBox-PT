@@ -43,11 +43,10 @@ class ProblemController extends Controller
         return view('problems.matriz');
     }
 
-    public function matrizGenerate(MatrizAction $matrizAction, Request $request): View
-    {   
-        //dd($request->toArray());
-        //$data = $request->validated();
-        $matriz = $matrizAction->generate($request->toArray());
+    public function matrizGenerate(MatrizAction $matrizAction, MatrizRequest $request): View
+    {  
+        $data = $request->validated();
+        $matriz = $matrizAction->generate($data);
         return view('problems.matriz', compact('matriz'));
     }
 }

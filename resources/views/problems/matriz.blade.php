@@ -14,33 +14,33 @@
                     @csrf
                     <label class="text-gray-700 font-semibold">Matriz: </label>
                     <br>
-                    <div class="grid grid-cols-3 gap-4 mb-4 items-center" id="matriz">
+                    <div class="grid grid-cols-3 gap-4 mb-4 items-center"zz>
                         <div>
-                            <input id="1" name="1" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
+                            <input id="one" name="one" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
                         </div>
                         <div>
-                            <input id="2" name="2" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
+                            <input id="two" name="two" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
                         </div>
                         <div>
-                            <input id="3" name="3" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
+                            <input id="three" name="three" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
                         </div>
                         <div>
-                            <input id="4" name="4" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
+                            <input id="four" name="four" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
                         </div>
                         <div>
-                            <input id="5" name="5" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
+                            <input id="five" name="five" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
                         </div>
                         <div>
-                            <input id="6" name="6" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
+                            <input id="six" name="six" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
                         </div>
                         <div>
-                            <input id="7" name="7" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
+                            <input id="seven" name="seven" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
                         </div>
                         <div>
-                            <input id="8" name="8" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
+                            <input id="eight" name="eight" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
                         </div>
                         <div>
-                            <input id="9" name="9" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
+                            <input id="nine" name="nine" class="rounded-md focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" type="number" min="1" max="9" required>
                         </div>
                     </div>
                     
@@ -49,31 +49,31 @@
                     </div>
                     
                     <div class="flex flex-col items-center text-center mt-1">
-                        @error('1')
+                        @error('one')
                             <span class="text-center rounded-md bg-red-100 p-1 text-red-700 text-xs">{{ $message }}</span>
                         @enderror
-                        @error('2')
+                        @error('two')
                             <span class="text-center rounded-md bg-red-100 p-1 text-red-700 text-xs">{{ $message }}</span>
                         @enderror
-                        @error('3')
+                        @error('three')
                             <span class="text-center rounded-md bg-red-100 p-1 text-red-700 text-xs">{{ $message }}</span>
                         @enderror
-                        @error('4')
+                        @error('four')
                             <span class="text-center rounded-md bg-red-100 p-1 text-red-700 text-xs">{{ $message }}</span>
                         @enderror
-                        @error('5')
+                        @error('five')
                             <span class="text-center rounded-md bg-red-100 p-1 text-red-700 text-xs">{{ $message }}</span>
                         @enderror
-                        @error('6')
+                        @error('six')
                             <span class="text-center rounded-md bg-red-100 p-1 text-red-700 text-xs">{{ $message }}</span>
                         @enderror
-                        @error('7')
+                        @error('seven')
                             <span class="text-center rounded-md bg-red-100 p-1 text-red-700 text-xs">{{ $message }}</span>
                         @enderror
-                        @error('8')
+                        @error('eight')
                             <span class="text-center rounded-md bg-red-100 p-1 text-red-700 text-xs">{{ $message }}</span>
                         @enderror
-                        @error('9')
+                        @error('nine')
                             <span class="text-center rounded-md bg-red-100 p-1 text-red-700 text-xs">{{ $message }}</span>
                         @enderror
                     </div>

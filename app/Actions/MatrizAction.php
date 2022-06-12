@@ -8,13 +8,13 @@ class MatrizAction
     {
         $matriz = [
             [
-                $data['1'], $data['2'], $data['3'],
+                $data['one'], $data['two'], $data['three'],
             ],
             [
-                $data['4'], $data['5'], $data['6'],
+                $data['four'], $data['five'], $data['six'],
             ],
             [
-                $data['7'], $data['8'], $data['9'],
+                $data['seven'], $data['eight'], $data['nine'],
             ]
         ];
         

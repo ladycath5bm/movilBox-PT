@@ -14,15 +14,15 @@ class MatrizRequest extends FormRequest
     public function rules(): array
     {
         return [
-            '1' => 'required|numeric|integer|min:1|max:9',
-            '2' => 'required|numeric|integer|min:1|max:9',
-            '3' => 'required|numeric|integer|min:1|max:9',
-            '4' => 'required|numeric|integer|min:1|max:9',
-            '5' => 'required|numeric|integer|min:1|max:9',
-            '6' => 'required|numeric|integer|min:1|max:9',
-            '7' => 'required|numeric|integer|min:1|max:9',
-            '8' => 'required|numeric|integer|min:1|max:9',
-            '9' => 'required|numeric|integer|min:1|max:9',
+            'one' => 'required|numeric|integer|min:1|max:9',
+            'two' => 'required|numeric|integer|min:1|max:9',
+            'three' => 'required|numeric|integer|min:1|max:9',
+            'four' => 'required|numeric|integer|min:1|max:9',
+            'five' => 'required|numeric|integer|min:1|max:9',
+            'six' => 'required|numeric|integer|min:1|max:9',
+            'seven' => 'required|numeric|integer|min:1|max:9',
+            'eight' => 'required|numeric|integer|min:1|max:9',
+            'nine' => 'required|numeric|integer|min:1|max:9',
         ];
     }
 }
