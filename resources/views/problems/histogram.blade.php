@@ -121,9 +121,16 @@
             </div>
             <div class="flex flex-col text-center items-center mt-4 mb-4">
                 @if(isset($histogram))
-                    @foreach ($histogram as $line)
-                        <ul><span class="p-10 text-center text-pink-800 font-bold">{{ $line }}</span></ul>
-                    @endforeach
+                    @for($i = 0; $i < 5; $i++)
+                        <ul>
+                            <span class="p-10 text-center text-pink-800 font-bold">
+                                {{  $i + 1 . '.' }}
+                                @for($j = 0; $j < $histogram[$i]; $j++)
+                                    {{ '*' }}
+                                @endfor
+                            </span>
+                        </ul>
+                    @endfor
                 @endif
             </div>
         </div>

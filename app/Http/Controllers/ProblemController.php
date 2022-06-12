@@ -30,8 +30,7 @@ class ProblemController extends Controller
 
     public function histogramGenerate(HistogramAction $histogramAction, HistogramRequest $request): View
     {
-        $myArray = $request->validated();  
-        dd($histogram = $histogramAction->generate($myArray));
+        $histogram = collect($histogramAction->generate($request->validated()));
 
         return view('problems.histogram', compact('histogram'));
     }
