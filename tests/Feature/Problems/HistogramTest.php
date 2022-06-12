@@ -20,4 +20,26 @@ class HistogramTest extends TestCase
             'Arreglo:',
         ]);
     }
+
+    public function testIcanSeeHistogramGenerated(): void{
+        
+        $myArray = [
+            'p_one' => 1,
+            'p_two' => 1,
+            'p_three' => 1,
+            'p_four' => 1,
+            'p_five' => 1,
+            'p_six' => 1,
+            'p_seven' => 1,
+            'p_eight' => 1,
+            'p_nine' => 1,
+            'p_ten' => 1,
+        ];
+
+        $response = $this->get(route('problems.histogram.generate', $myArray));
+
+        $response->assertOk();
+        $response->assertViewIs('problems.histogram');
+        $response->assertViewHas('histogram');
+    }
 }

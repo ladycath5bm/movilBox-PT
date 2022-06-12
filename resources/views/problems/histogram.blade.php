@@ -8,75 +8,75 @@
             <span>2. Histograma</span>
         </div>
         <div class="mt-4 mb-4 border border-gray-700 rounded-lg">
-            <span class="flex flex-col items-cetner text-center p-10">Ingrese un arreglo, con valores entre 1 y 5</span>
+            <span class="flex flex-col text-center p-10">Ingrese un arreglo, con valores entre 1 y 5</span>
             <div class="px-6">
                 <form action="{{ route('problems.histogram.generate') }}" method="get" id="form-generate" name="form-generate">
                     @csrf
                     <label>Arreglo: </label>
-                    <select class="rounded-md text-sm text-pink-600" name="p_one" id="p_one">
+                    <select class="rounded-md text-sm text-pink-600 focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" name="p_one" id="p_one">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <select class="rounded-md text-sm text-pink-600" name="p_two" id="p_two">
+                    <select class="rounded-md text-sm text-pink-600 focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" name="p_two" id="p_two">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <select class="rounded-md text-sm text-pink-600" name="p_three" id="p_three">
+                    <select class="rounded-md text-sm text-pink-600 focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" name="p_three" id="p_three">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <select class="rounded-md text-sm text-pink-600" name="p_four" id="p_four">
+                    <select class="rounded-md text-sm text-pink-600 focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" name="p_four" id="p_four">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <select class="rounded-md text-sm text-pink-600" name="p_five" id="p_five">
+                    <select class="rounded-md text-sm text-pink-600 focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" name="p_five" id="p_five">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <select class="rounded-md text-sm text-pink-600" name="p_six" id="p_six">
+                    <select class="rounded-md text-sm text-pink-600 focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" name="p_six" id="p_six">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <select class="rounded-md text-sm text-pink-600" name="p_seven" id="p_seven">
+                    <select class="rounded-md text-sm text-pink-600 focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" name="p_seven" id="p_seven">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <select class="rounded-md text-sm text-pink-600" name="p_eight" id="p_eight">
+                    <select class="rounded-md text-sm text-pink-600 focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" name="p_eight" id="p_eight">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <select class="rounded-md text-sm text-pink-600" name="p_nine" id="p_nine">
+                    <select class="rounded-md text-sm text-pink-600 focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" name="p_nine" id="p_nine">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <select class="rounded-md text-sm text-pink-600" name="p_ten" id="p_ten">
+                    <select class="rounded-md text-sm text-pink-600 focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600" name="p_ten" id="p_ten">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>

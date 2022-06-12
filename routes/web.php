@@ -14,3 +14,7 @@ Route::get('problems/histogram/generate', [ProblemController::class, 'histogramG
     ->name('problems.histogram.generate');
 Route::get('problems/histogram', [ProblemController::class, 'histogram'])
     ->name('problems.histogram');
+Route::get('problems/matriz/generate', [ProblemController::class, 'matrizGenerate'])
+    ->name('problems.matriz.generate');
+Route::get('problems/matriz', [ProblemController::class, 'matriz'])
+    ->name('problems.matriz');
