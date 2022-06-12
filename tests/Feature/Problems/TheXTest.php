@@ -26,7 +26,7 @@ class TheXTest extends TestCase
         
         $dim = 5;
 
-        $response = $this->get(route('problems.thex.generated', ['dimention' => $dim]));
+        $response = $this->get(route('problems.thex.generate', ['dimention' => $dim]));
 
         $response->assertOk();
         $response->assertViewIs('problems.thex');
