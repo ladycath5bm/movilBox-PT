@@ -26,7 +26,7 @@
                 </div>
                 <div>
                     <ol class="list-decimal mx-4" start="4">
-                        <li><a href="#" class="mx-2 text-md text-gray-700 font-semibold hover:text-pink-600 hover:font-bold">SQL departamentos</a></li>
+                        <li><a href="{{ route('querys.departments') }}" class="mx-2 text-md text-gray-700 font-semibold hover:text-pink-600 hover:font-bold">SQL departamentos</a></li>
                         <li><a href="#" class="mx-2 text-md text-gray-700 font-semibold hover:text-pink-600 hover:font-bold">SQL Json</a></li>
                         <li><a href="#" class="mx-2 text-md text-gray-700 font-semibold hover:text-pink-600 hover:font-bold">SQL trigger</a></li>
                         <li><a href="#" class="mx-2 text-md text-gray-700 font-semibold hover:text-pink-600 hover:font-bold">SQL Json</a></li>

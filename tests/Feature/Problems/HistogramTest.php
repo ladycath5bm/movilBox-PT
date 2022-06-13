@@ -21,8 +21,7 @@ class HistogramTest extends TestCase
         ]);
     }
 
-    public function testIcanSeeHistogramGenerated(): void{
-        
+    public function testIcanSeeHistogramGenerated(): void{  
         $myArray = [
             'p_one' => 1,
             'p_two' => 1,
