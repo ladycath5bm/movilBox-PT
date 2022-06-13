@@ -11,7 +11,7 @@ class EmployeeFactory extends Factory
         return [
             'firstname' => $this->faker->firstname(),
             'lastname' => $this->faker->lastName(),
-            'salary' => random_int(100000, 999999999),
+            'salary' => random_int(10000, 99990),
             'department_id' => 1,
             'education_level_id' => 1,
         ];

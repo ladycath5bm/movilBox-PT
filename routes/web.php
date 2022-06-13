@@ -25,7 +25,8 @@ Route::controller(ProblemController::class)->group(function () {
 Route::controller(QueryController::class)->group(function () {
     Route::get('querys/departments', 'queryDepartments')
         ->name('querys.departments');
-    //Route::get();
+    Route::get('querys/people', 'queryPeople')
+        ->name('querys.people');
     //Route::get();
     //Route::get();
 });
